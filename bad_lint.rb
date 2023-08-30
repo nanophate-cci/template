@@ -4,7 +4,7 @@ puts "Hello, #{name}!"
  end
 
     def say_goodbye( name )
-puts "Goodbye, #{ name }!"
+               puts "Goodbye, #{ name }!"
    end 
 end
 
