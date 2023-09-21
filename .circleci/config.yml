@@ -6,4 +6,4 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: echo "nani!"
+      - run: echo "hollla!"
