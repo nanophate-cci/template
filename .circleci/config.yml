@@ -5,5 +5,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - checkout
+     - run:
+          name: "Shallow checkout code"
+          command: git clone --depth 5 "$CIRCLE_REPOSITORY_URL" --branch "$CIRCLE_BRANCH"
       - run: echo "hollla!"
