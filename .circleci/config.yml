@@ -4,5 +4,6 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
+      - image: cimg/postgres:16.0.0
     steps:
       - run: echo "hollla!"
