@@ -5,5 +5,9 @@ jobs:
     docker:
       - image: cimg/base:stable
       - image: cimg/postgres:16.0
+      - image: cimg/redis:6.2.12
+      - image: circleci/dynamodb
+      
     steps:
       - run: echo "hollla!"
+      - run: sleep 10
