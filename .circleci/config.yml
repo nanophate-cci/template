@@ -6,4 +6,5 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
+      - run: sleep 500
       - run: echo "hollla!"
