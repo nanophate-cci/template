@@ -4,6 +4,10 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
+        environment:
+          GIT_TRACE_PACKET: 1
+          GIT_TRACE: 1
+          GIT_CURL_VERBOSE: 1
     steps:
       - checkout
       - run: free -h
