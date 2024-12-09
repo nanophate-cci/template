@@ -4,10 +4,10 @@ jobs:
   build:
     machine:
       image: ubuntu-2004:current
-        environment:
-          GIT_TRACE_PACKET: 1
-          GIT_TRACE: 1
-          GIT_CURL_VERBOSE: 1
+    environment:
+      GIT_TRACE_PACKET: 1
+      GIT_TRACE: 1
+      GIT_CURL_VERBOSE: 1
     steps:
       - checkout
       - run: free -h
