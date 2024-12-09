@@ -2,9 +2,9 @@ version: 2.1
 
 jobs:
   build:
-    machine:
-      #- image: cimg/base:stable
-      image: ubuntu-2004:current
+    docker:
+      - image: cimg/base:stable
+      #image: ubuntu-2004:current
         environment:
           GIT_TRACE_PACKET: 1
           GIT_TRACE: 1
