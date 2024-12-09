@@ -2,8 +2,7 @@ version: 2.1
 
 jobs:
   build:
-    machine:
-      image: ubuntu-2004:current
+    machine: true
     environment:
       GIT_TRACE_PACKET: 1
       GIT_TRACE: 1
