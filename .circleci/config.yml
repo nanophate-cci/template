@@ -14,3 +14,16 @@ jobs:
       - run: free -h
       - run: sleep 10
       - run: echo "hollla!"
+      - run:
+            name: Create artifact
+            command: |
+              echo "This is a sample artifact." > artifact.txt
+      - run:  # Run tests or other commands here if necessary
+          name: Run tests
+          command: |
+            # Replace this with your testing command
+            echo "Running tests..."
+      - persist_to_workspace:
+          root: .
+          paths:
+            - artifact.txt  # save the artifact to workspace
