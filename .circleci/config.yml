@@ -23,6 +23,5 @@ jobs:
           command: |
             # Replace this with your testing command
             echo "Running tests..."
-      - store_artifact:
-          paths:
-            - artifact.txt  # save the artifact to workspace
+      - store_artifacts:
+          paths: artifact.txt
