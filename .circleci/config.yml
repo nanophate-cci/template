@@ -16,4 +16,4 @@ jobs:
       - run: echo "hollla!"
       - run: echo "This is a sample artifact." > artifact.txt
       - store_artifacts:
-          paths: artifact.txt
+          path: artifact.txt
