@@ -18,3 +18,5 @@ jobs:
       - run: echo "This is a sample artifact." > artifact.txt
       - store_artifacts:
           path: artifact.txt
+      - store_artifacts:
+          path: /tmp/
