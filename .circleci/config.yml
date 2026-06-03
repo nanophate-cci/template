@@ -14,7 +14,7 @@ jobs:
       - checkout
       - run: free -h
       - run: sleep 10
-      - run: echo "holllaaa!"
+      - run: echo "holllaaaa!"
       - run: echo "This is a sample artifact." > artifact.txt
       - store_artifacts:
           path: artifact.txt
